@@ -12,38 +12,40 @@ body {
     background-image: url("IN-en-20240115-trifectadaily-perspective_alpha_website_large.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: max(1600px, 100vw);
-    /* height: 120vh; */
+    /* height: 700px; */
+    /* min-width: 100vw; */
 }
 
 .box {
     background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.478), rgb(0, 0, 0));
-    /* height: 120vh; */
-    border-bottom: 10px solid rgb(62, 62, 62);
+    min-height: 700px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
     flex-wrap: wrap;
-    max-width: 95vw;
-    margin: auto;
-    height: 100px;
-    text-align: center;
+    /* width: auto; */
+    padding: 5px 34px 5px 13px
+}
+
+.header img {
+    width: 190px;
 }
 
 .button {
-    padding: 5px 20px;
+    padding: 10px 20px;
     color: white;
     border: 1px solid white;
     background-color: red;
+    border-radius: 5px;
 }
 
 .transparent {
     background-color: rgba(0, 0, 0, 0.245);
     border: 1px solid white;
+    margin-right: 10px;
 }
 
 .header2 {
@@ -53,16 +55,21 @@ body {
     flex-direction: column;
     margin-top: 150px;
     color: white;
-    font-size: 1.5rem;
+    text-align: center;
 }
 
-/* .header2 h1 {
+.header2 h1 {
     font-size: 3rem;
-} */
+}
 
 .header2 p,
 input {
     margin-top: 20px;
+    font-size: 24px;
+}
+
+.header2 p {
+    padding: 0px 20px;
 }
 
 .header2 button {
@@ -76,8 +83,8 @@ input {
 }
 
 .header2 input {
-    /* padding: 20px 176px 20px 20px; */
-    /* font-size: 22px; */
+    padding: 20px 176px 20px 20px;
+    font-size: 22px;
     background-color: rgba(0, 0, 0, 0.597);
     border-radius: 5px;
     color: white;
